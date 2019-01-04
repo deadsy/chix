@@ -1,0 +1,12 @@
+--- ./demos/STM32/RT-STM32F407-DISCOVERY/Makefile	2019-01-03 16:16:31.076029444 -0800
++++ ./demos/STM32/RT-STM32F407-DISCOVERY/Makefile	2019-01-03 16:17:27.024162589 -0800
+@@ -155,7 +155,8 @@
+ MCU  = cortex-m4
+ 
+ #TRGT = arm-elf-
+-TRGT = arm-none-eabi-
++#TRGT = arm-none-eabi-
++TRGT = /opt/gcc-arm-none-eabi-7-2017-q4-major/bin/arm-none-eabi-
+ CC   = $(TRGT)gcc
+ CPPC = $(TRGT)g++
+ # Enable loading with g++ only if you need C++ runtime support.
